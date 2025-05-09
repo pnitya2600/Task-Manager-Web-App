@@ -1,0 +1,168 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background: #000000; /* Jet Black */
+  color: #D1D0D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 18px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1px solid #5C4E4E;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #D1D0D0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 6px rgba(220, 220, 220, 0.2);
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #988686;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background: #D1D0D0;
+  color: #000;
+  border: 2px solid #988686;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  resize: none;
+  margin-bottom: 0.8rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5C4E4E;
+  box-shadow: 0 0 6px rgba(156, 136, 136, 0.3);
+}
+
+/* General "Add" button styling (distinct from table buttons) */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #7B5E57; /* Updated for better contrast */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #A1887F;
+  color: #000;
+  transform: scale(1.02);
+}
+
+.task-row {
+  background: #1a1a1a;
+  border: 1px solid #5C4E4E;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  color: #D1D0D0;
+}
+
+/* Table styling */
+.w-full.border.table-auto.text-white {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+.w-full.border.table-auto.text-white th {
+  padding: 0.8rem !important;
+  text-align: left !important;
+  border-bottom: 1px solid #988686 !important;
+  font-weight: bold !important;
+  color: #D1D0D0 !important;
+  background: #3A2F2F !important; /* Updated for contrast with buttons */
+}
+
+.w-full.border.table-auto.text-white td {
+  padding: 0.8rem !important;
+  border-bottom: 1px solid #333 !important;
+  color: #D1D0D0 !important;
+}
+
+.w-full.border.table-auto.text-white td:last-child {
+  text-align: right !important;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+/* Button styles in task list rows */
+.w-full.border.table-auto.text-white td:last-child button {
+  width: auto !important;
+  padding: 0.6rem 1rem !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.w-full.border.table-auto.text-white td:last-child button:hover {
+  opacity: 0.85 !important;
+}
+
+/* Edit button */
+.w-full.border.table-auto.text-white td:last-child button:nth-child(1) {
+  background-color: #988686 !important;
+  color: black !important;
+}
+
+/* Delete button */
+.w-full.border.table-auto.text-white td:last-child button:nth-child(2) {
+  background-color: #5C4E4E !important;
+  color: white !important;
+}

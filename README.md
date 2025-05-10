@@ -67,7 +67,7 @@ task-manager-app/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/task-manager-app.git
+(https://github.com/pnitya2600/Task-Manager-Web-App.git)
 cd task-manager-app
 ```
 
